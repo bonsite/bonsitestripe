@@ -3,20 +3,8 @@ import Link from "next/link";
 
 const links = [
 	{
-		label: "Home",
+		label: "Início",
 		href: "/",
-	},
-	{
-		label: "Apparel",
-		href: "/category/apparel",
-	},
-	{
-		label: "Accessories",
-		href: "/category/accessories",
-	},
-	{
-		label: "Digital",
-		href: "/category/digital",
 	},
 ];
 
