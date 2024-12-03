@@ -67,7 +67,6 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
-		"@commitlint/cli": "19.6.0",
 		"@commitlint/config-conventional": "19.6.0",
 		"@commitlint/types": "19.5.0",
 		"@next/env": "15.0.4-canary.30",
