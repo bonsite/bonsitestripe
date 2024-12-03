@@ -3,20 +3,19 @@ import Link from "next/link";
 
 const links = [
 	{
-		label: "Início",
+		label: "Inicio",
 		href: "/",
 	},
 ];
 
 {
 	/* <Drawer>
-  <DrawerTrigger>Open</DrawerTrigger>
+  <DrawerTrigger>Abrir</DrawerTrigger>
   <DrawerContent>
     <DrawerHeader>
-      <DrawerTitle>Are you absolutely sure?</DrawerTitle>
+      <DrawerTitle>Voc  est   absolutamente certo?</DrawerTitle>
       <DrawerDescription>
-        This action cannot be undone. This will permanently delete your account
-        and remove your data from our servers.
+        Essa a o n o pode ser desfeita. Isso ir  deletar permanentemente sua conta e remover seus dados dos nossos servidores.
       </DrawerDescription>
     </DrawerHeader>
   </DrawerContent>

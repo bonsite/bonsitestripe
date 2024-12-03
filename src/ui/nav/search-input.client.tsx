@@ -67,8 +67,8 @@ export const SearchInput = ({ placeholder }: { placeholder: string }) => {
 			className={inputClasses}
 			placeholder={placeholder}
 			type="search"
-			enterKeyHint="search"
-			name="search"
+			enterKeyHint="pesquisar"
+			name="pesquisar"
 			value={query}
 		/>
 	);

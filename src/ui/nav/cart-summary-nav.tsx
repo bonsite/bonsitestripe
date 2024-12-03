@@ -43,11 +43,11 @@ const CartSummaryNavInner = async () => {
 						<YnsLink href="/cart-overlay" scroll={false} className="relative block h-6 w-6" prefetch={true}>
 							<ShoppingBagIcon />
 							<span className="absolute bottom-0 right-0 inline-flex h-5 w-5 translate-x-1/2 translate-y-1/2 items-center justify-center rounded-full border-2 bg-white text-center text-xs">
-								<span className="sr-only">{t("itemsInCart")}: </span>
+								<span className="sr-only">Itens no carrinho: </span>
 								{totalItems}
 							</span>
 							<span className="sr-only">
-								{t("total")}:{" "}
+								Total:{" "}
 								{formatMoney({
 									amount: total,
 									currency: cart.cart.currency,
@@ -58,10 +58,8 @@ const CartSummaryNavInner = async () => {
 					</div>
 				</TooltipTrigger>
 				<TooltipContent side="left" sideOffset={25}>
-					<p>{t("totalItems", { count: totalItems })}</p>
-					<p>
-						{t("total")}: {formatMoney({ amount: total, currency: cart.cart.currency, locale })}
-					</p>
+					<p>{`Total de itens: ${totalItems}`}</p>
+					<p>{`Total: ${formatMoney({ amount: total, currency: cart.cart.currency, locale })}`}</p>
 				</TooltipContent>
 			</Tooltip>
 		</TooltipProvider>
