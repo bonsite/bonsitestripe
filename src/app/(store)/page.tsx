@@ -10,7 +10,6 @@ export const metadata = {
 
 export default async function Home() {
 	const products = await Commerce.productBrowse({ first: 6 });
-	const t = await getTranslations("/");
 
 	return (
 		<main>
