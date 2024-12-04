@@ -1,9 +1,29 @@
+// layout.tsx
 import "@/app/globals.css";
 import { Footer } from "@/ui/footer/footer";
 import { JsonLd, accountToWebsiteJsonLd } from "@/ui/json-ld";
-import { Nav } from "@/ui/nav/nav";
 import { TooltipProvider } from "@/ui/shadcn/tooltip";
 import * as Commerce from "commerce-kit";
+import type React from "react";
+
+// Define the Nav component prop types
+interface NavProps {
+	items: { label: string; href: string }[];
+}
+
+export const Nav: React.FC<NavProps> = ({ items }) => {
+	return (
+		<nav>
+			<ul>
+				{items.map((item, index) => (
+					<li key={index}>
+						<a href={item.href}>{item.label}</a>
+					</li>
+				))}
+			</ul>
+		</nav>
+	);
+};
 
 export default async function StoreLayout({
 	children,
