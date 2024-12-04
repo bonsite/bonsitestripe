@@ -3,8 +3,16 @@ import Link from "next/link";
 
 const links = [
 	{
-		label: "Inicio",
+		label: "Início",
 		href: "/",
+	},
+	{
+		label: "Frutíferas",
+		href: "/category/frutifera",
+	},
+	{
+		label: "Floríferas",
+		href: "/category/florifera",
 	},
 ];
 
