@@ -1,5 +1,4 @@
 import { publicUrl } from "@/env.mjs";
-import { getTranslations } from "@/i18n/server";
 import { ProductList } from "@/ui/products/product-list";
 import * as Commerce from "commerce-kit";
 import type { Metadata } from "next/types";
