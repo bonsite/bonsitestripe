@@ -1,5 +1,5 @@
 import { getCartFromCookiesAction } from "@/actions/cart-actions";
-import { getLocale, getTranslations } from "@/i18n/server";
+import { getLocale } from "@/i18n/server";
 import { formatMoney } from "@/lib/utils";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/ui/shadcn/tooltip";
 import { YnsLink } from "@/ui/yns-link";
@@ -32,7 +32,6 @@ const CartSummaryNavInner = async () => {
 
 	const total = calculateCartTotalNetWithoutShipping(cart);
 	const totalItems = cart.lines.reduce((acc, line) => acc + line.quantity, 0);
-	const t = await getTranslations("Global.nav.cartSummary");
 	const locale = await getLocale();
 
 	return (
